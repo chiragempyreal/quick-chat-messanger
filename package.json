@@ -1,7 +1,17 @@
 {
   "name": "quicky-react-messenger",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Messanger chat application for react project",
+  "author": "Chirag Gohel",
+  "keywords": ["react", "components", "ui", "messanger", "chat"],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiragempyreal/quick-chat-messanger.git"
+  },
+  "version": "0.1.1",
+  "private": false,
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -24,7 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

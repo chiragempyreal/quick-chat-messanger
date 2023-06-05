@@ -10,6 +10,7 @@ import Calls from "../components/Calls/Calls";
 import Friends from "../components/Friends/Friends";
 import Account from "../components/Account/Account";
 import Documentation from "../components/Documentation/Documentation";
+import { ChatApplication } from "../lib";
 
 // Route component to manage app routes
 class Routing extends Component {
@@ -21,6 +22,7 @@ class Routing extends Component {
         <Route path="/SignUp" component={SignUp} exact />
         <Route path="/reset-password" component={ResetPassword} exact />
         <Route path="/Chats" component={Chats} />
+        <Route path="/Chat-app" component={ChatApplication} />
         <Route path="/Calls" component={Calls} />
         <Route path="/Friends" component={Friends} />
         <Route path="/Account" component={Account} />
