@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+DROPDOWN STYLESHEET
+
+Last change: [Initial Release]
+
+Chanelog:
+-------------------------------------------------------------------*/
+
+// Dropdown
+.dropdown {
+    cursor: pointer;
+
+    .dropdown-menu {
+        z-index: 1025;
+        font-size: $font-size-sm;
+
+        .dropdown-item {
+            padding: 0.5rem 1.5rem;
+            display: flex;
+            align-items: center;
+
+            span {
+                line-height: 1;
+            }
+        }
+    }
+
+    &:active svg,
+    &:focus svg,
+    &:hover svg {
+    color: $gray-600 !important;
+    }
+
+    &.show {
+
+        .btn-secondary.btn-minimal,
+        .nav-link {
+            color: $gray-700 !important;
+        }
+    }
+}
+

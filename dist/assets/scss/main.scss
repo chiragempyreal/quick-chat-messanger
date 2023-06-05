@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Quicky Messanger
+-------------------------------------------------------------------*/
+
+
+// FRAMEWORK
+@import 'bootstrap/bootstrap';
+
+
+// ABSTRACTS
+@import 'abstracts/mixins';
+
+
+// BASE
+@import 'base/base.root';
+@import 'base/base.typography';
+@import 'base/base.links';
+@import 'base/base.backgrounds';
+@import 'base/base.utilities';
+@import 'base/base.forms';
+
+
+// COMOPNENTS
+@import 'components/components.avatar';
+@import 'components/components.buttons';
+@import 'components/components.cards';
+@import 'components/components.chat-style';
+@import 'components/components.chatlist';
+@import 'components/components.dropdown';
+@import 'components/components.list-group';
+@import 'components/components.modal';
+@import 'components/components.emojimart';
+
+
+// LAYOUTS
+@import 'layouts/layouts.navbar';
+@import 'layouts/layouts.layout';
+@import 'layouts/layouts.sidebar';
+@import 'layouts/layouts.chat';
+@import 'layouts/layouts.rtl';
+
+
+// Skin
+@import 'skins/dark-skin';
+
+
+// CUSTOM
+@import 'custom';

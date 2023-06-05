@@ -1,0 +1,32 @@
+.react_lightgallery_item {
+  cursor: pointer;
+}
+.chat-footer {
+  position: relative;
+}
+
+.window-close {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.window-close::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  opacity: 0.5;
+}
+.react-autocomplete-input {
+  top: initial !important;
+  left: initial !important;
+  bottom: 3rem !important;
+}

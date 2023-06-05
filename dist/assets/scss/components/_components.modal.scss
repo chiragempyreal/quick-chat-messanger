@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------
+MODAL STYLESHEET
+
+Last change: [Initial Release]
+
+Chanelog:
+-------------------------------------------------------------------*/
+
+
+// Fullscreen Modal at lg,ms,sm width
+.modal.show{
+
+    &.modal-lg-fullscreen{
+
+        @include media-breakpoint-down(lg){
+            @include modal-fullscreen();
+        }
+    }
+
+
+    &.modal-md-fullscreen{
+
+        @include media-breakpoint-down(md){
+            @include modal-fullscreen();
+        }
+    }
+
+
+    &.modal-sm-fullscreen{
+
+        @include media-breakpoint-down(sm){
+            @include modal-fullscreen();
+        }
+    }
+    
+}
+
+
+.modal{
+    &.fade{
+        .modal-dialog{
+            &.modal-dialog-zoom{
+                transform: translate(0,0) scale(.95);
+            }
+        }
+    }
+    &.show{
+        .modal-dialog{
+            &.modal-dialog-zoom{
+                transform: translate(0,0) scale(1);
+            }
+        }
+    }
+}
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: $black, $alpha: 0.3);
+    z-index: 1022;
+    visibility: hidden;
+
+    &.backdrop-visible {
+        visibility: visible;
+      }
+  }
+  
